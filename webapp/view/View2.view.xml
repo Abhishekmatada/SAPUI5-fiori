@@ -1,0 +1,59 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.f"
+	xmlns:card="sap.f.cards" xmlns:w="sap.ui.integration.widgets" controllerName="VF.VF.controller.View2">
+	<App id="app">
+		<pages>
+			<Page xmlns="sap.m" title="OVERVIEW PAGE" showNavButton="true" navButtonPress="onBack">
+				<content>
+					<FlexBox height="50px" alignItems="Start" justifyContent="Start">
+						<items>
+							<Button text="INFO" class="sapUiTinyMarginBegin" press="handleDialogPress"/>
+							<Button id="quickViewBtn" class="sapUiTinyMarginBegin" text="Details" width="200px" press="handleQuickViewBtnPress"/>
+							<Button text="Navigate back to the first view" class="sapUiTinyMarginBegin" press="onBack"/>
+						</items>
+					</FlexBox>
+					<ObjectHeader icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGX8bXas3g5M8camNrYoN-y5tHLB8o5yqD2CE4sxVlIf5G-5Il"
+						iconDensityAware="false" iconAlt="Denise Smith" imageShape="Circle" responsive="true" title="Denise Smith" intro="Senior Developer">
+						<attributes>
+							<ObjectAttribute title="Email address" text="DeniseSmith@sap.com" active="true"/>
+							<ObjectAttribute title="Office Phone" text="+33 6 453 564"/>
+							<ObjectAttribute title="Functional Area" text="Development"/>
+						</attributes>
+					</ObjectHeader>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Country-Specific Profit Margin" subheader="Expenses"
+						press="press">
+						<TileContent unit="EUR" footer="Current Quarter">
+							<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+							<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+						</TileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Country-Specific Profit Margin" subheader="Expenses"
+						press="press">
+						<TileContent unit="EUR" footer="Current Quarter">
+							<ProgressIndicator class="sapUiSmallMarginTop" percentValue="30" displayValue="30%" showValue="true" state="None"/>
+							<ProgressIndicator class="sapUiSmallMarginCenter" percentValue="30" displayValue="30%" showValue="true" state="None"/>
+						</TileContent>
+					</GenericTile>
+					<f:Card class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" width="300px">
+						<f:header >
+							<card:Header title="Project Cloud Transformation" subtitle="Revenue per Product | EUR"/>
+						</f:header>
+						<f:content>
+							<List showSeparators="None" items="{path: '/productItems'}" 	>
+								<CustomListItem>
+									<HBox alignItems="Center" justifyContent="SpaceBetween">
+										<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+											<Title level="H3" text="{title}"/>
+											<Text text="{subtitle}"/>
+										</VBox>
+										<ObjectStatus class="sapUiTinyMargin" text="{revenue}" state="{statusSchema}"/>
+									</HBox>
+								</CustomListItem>
+							</List>
+						</f:content>
+					</f:Card>
+					<w:Card id="listCardSample" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" action="onAction" width="300px"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

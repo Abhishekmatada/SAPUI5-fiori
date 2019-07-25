@@ -1,0 +1,255 @@
+<mvc:View controllerName="VF.VF.controller.View1" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Button id="helloDialogButton" text="{i18n>openDialogButtonText}" press=".onOpenDialog" icon="sap-icon://world" class="sapUiSmallMarginEnd"/>
+						<IconTabBar id="idTopLevelIconTabBar">
+							<items>
+								<IconTabFilter id="start" text="{i18n>gettingStartedFilter}">
+									<Carousel>
+										<pages>
+											<Image src="https://civileats.com/wp-content/uploads/2018/06/180702-vertical-farming-farmone-2b.jpg" height="600px"/>
+											<Image src="https://www.alliedmarketresearch.com/images/vertical-farming-market-1.png" height="600px"/>
+											<Image src="http://slaytonsearch.com/wp-content/uploads/2018/10/bigstock-222060982-768x508.jpg" height="600px"/>
+										</pages>
+									</Carousel>
+									<l:HorizontalLayout>
+										<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+											header="Feed Tile that shows updates of the last feeds given to a specific topic:" frameType="TwoByOne" press="press">
+											<TileContent footer="New Notifications">
+												<FeedContent contentText="@@notify Great outcome of the Presentation today. New functionality well received."
+													subheader="About 1 minute ago in Computer Market" value="352"/>
+											</TileContent>
+										</GenericTile>
+										<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="2500">
+											<GenericTile backgroundImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEWateM-PN_hI3av6Za3DEUCojwxKmOsRfE1TSBZC1yRWCee64"
+												frameType="TwoByOne" press="pressOnTileOne">
+												<TileContent footer="August 21, 2016">
+													<NewsContent contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe" subheader="Today, SAP News"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile backgroundImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8pYmfMDFBf5L12FRBVVudIwahxfA36rWD0_k4r2-v7b52hLPs"
+												frameType="TwoByOne">
+												<TileContent footer="August 21, 2016">
+													<NewsContent contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com" subheader="Today, SAP News"/>
+												</TileContent>
+											</GenericTile>
+										</SlideTile>
+										<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+											header="Feed Tile that shows updates of the last feeds given to a specific topic:" frameType="TwoByOne" press="press">
+											<TileContent footer="New Notifications">
+												<FeedContent contentText="@@notify Great outcome of the Presentation today. New functionality well received."
+													subheader="About 1 minute ago in Computer Market" value="352"/>
+											</TileContent>
+										</GenericTile>
+									</l:HorizontalLayout>
+									<l:VerticalLayout width="100%">
+										<l:content>
+											<Panel class="sapUiDemoFlexBoxSizeAdjustments">
+												<headerToolbar>
+													<Toolbar>
+														<Title level="H2" text="Equal flexibility and content"/>
+													</Toolbar>
+												</headerToolbar>
+												<FlexBox alignItems="Start">
+													<items>
+														<GenericTile class=" sapUiSmallMarginEnd sapUiTinyMarginTop tileLayout"
+															header="Feed Tile that shows updates of the last feeds given to a specific topic:" frameType="TwoByOne" press="press">
+															<TileContent footer="New Notifications">
+																<FeedContent contentText="@@notify Great outcome of the Presentation today. New functionality well received."
+																	subheader="About 1 minute ago in Computer Market" value="352"/>
+															</TileContent>
+														</GenericTile>
+														<GenericTile class=" sapUiSmallMarginEnd sapUiTinyMarginTop tileLayout"
+															header="Feed Tile that shows updates of the last feeds given to a specific topic:" frameType="TwoByOne" press="press">
+															<TileContent footer="New Notifications">
+																<FeedContent contentText="@@notify Great outcome of the Presentation today. New functionality well received."
+																	subheader="About 1 minute ago in Computer Market" value="352"/>
+															</TileContent>
+														</GenericTile>
+														<GenericTile class=" sapUiSmallMarginEnd sapUiTinyMarginTop tileLayout"
+															header="Feed Tile that shows updates of the last feeds given to a specific topic:" frameType="TwoByOne" press="press">
+															<TileContent footer="New Notifications">
+																<FeedContent contentText="@@notify Great outcome of the Presentation today. New functionality well received."
+																	subheader="About 1 minute ago in Computer Market" value="352"/>
+															</TileContent>
+														</GenericTile>
+													</items>
+												</FlexBox>
+											</Panel>
+										</l:content>
+									</l:VerticalLayout>
+									<!--//generic tile  using blocklayout -->
+									<l:VerticalLayout width="100%">
+										
+										<l:BlockLayout >
+											<l:BlockLayoutRow>
+												<l:BlockLayoutCell title="50% width cell">
+													<GenericTile class=" sapUiTinyMarginTop tileLayout" header="Feed Tile that shows updates of the last feeds given to a specific topic:"
+														frameType="TwoByOne" press="press">
+														<TileContent footer="New Notifications">
+															<FeedContent contentText="@@notify Great outcome of the Presentation today. New functionality well received."
+																subheader="About 1 minute ago in Computer Market" value="352"/>
+														</TileContent>
+													</GenericTile>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell title="50% width cell">
+													<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="2500">
+														<GenericTile backgroundImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEWateM-PN_hI3av6Za3DEUCojwxKmOsRfE1TSBZC1yRWCee64"
+															frameType="TwoByOne" press="pressOnTileOne">
+															<TileContent footer="August 21, 2016">
+																<NewsContent contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe" subheader="Today, SAP News"/>
+															</TileContent>
+														</GenericTile>
+														<GenericTile backgroundImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8pYmfMDFBf5L12FRBVVudIwahxfA36rWD0_k4r2-v7b52hLPs"
+															frameType="TwoByOne">
+															<TileContent footer="August 21, 2016">
+																<NewsContent contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com" subheader="Today, SAP News"/>
+															</TileContent>
+														</GenericTile>
+													</SlideTile>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell title="50% width cell">
+													<GenericTile class=" sapUiTinyMarginTop sapUiSmallMarginEnd tileLayout"
+														header="Feed Tile that shows updates of the last feeds given to a specific topic:" frameType="TwoByOne" press="press">
+														<TileContent footer="New Notifications">
+															<FeedContent contentText="@@notify Great outcome of the Presentation today. New functionality well received."
+																subheader="About 1 minute ago in Computer Market" value="352"/>
+														</TileContent>
+													</GenericTile>
+												</l:BlockLayoutCell>
+											</l:BlockLayoutRow>
+										</l:BlockLayout>
+									</l:VerticalLayout>
+									<!--//generic tile  using blocklayout -->
+									<!--<form:SimpleForm editable="true">-->
+									<!--	<Label text="Parent width"/>-->
+									<!--	<Label id="backgroundLabel" text="Background"/>-->
+									<!--	<SegmentedButton selectedKey="{/selectedBackground}" ariaDescribedBy="backgroundLabel" ariaLabelledBy="backgroundLabel">-->
+									<!--		<items>-->
+									<!--			<SegmentedButtonItem key="Default" text="Default"/>-->
+									<!--			<SegmentedButtonItem key="Light" text="Light"/>-->
+									<!--<SegmentedButtonItem key="Accent" text="Accent"/>-->
+									<!--<SegmentedButtonItem key="Dashboard" text="Dashboard"/>-->
+									<!--		</items>-->
+									<!--	</SegmentedButton>-->
+									<!--</form:SimpleForm>-->
+									<l:VerticalLayout id="containerLayout" width="100%">
+										<l:BlockLayout id="BlockLayout" background="Light">
+											<l:BlockLayoutRow>
+												<l:BlockLayoutCell title="50% width cell">
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell title="50% width cell">
+													<FeedInput showIcon="true"/>
+													<FeedInput showIcon="true"/>
+												</l:BlockLayoutCell>
+											</l:BlockLayoutRow>
+											<l:BlockLayoutRow scrollable="true">
+												<l:BlockLayoutCell width="50" title="Cell inside scrollable row">
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell width="100" title="Centered Heading" titleAlignment="Center">
+													<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell>
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell width="90">
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell>
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell>
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+											</l:BlockLayoutRow>
+											<l:BlockLayoutRow accentCells="Accent0">
+												<l:BlockLayoutCell title="EFFICIENT PRODUCTION MAINTENANCE">
+													<FlexBox justifyContent="Center">
+														<Image src="https://pureadvantage.org/wp-content/uploads/2016/08/Dr_Rosie_Bosworth-mirai2.jpg" class="service1"
+															tooltip="Maintain Production with better efficient manner" press=".onNavigate" densityAware="false" width="{/imageWidth}"/>
+													</FlexBox>
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+													<!--<Image src="{image>/products/pic1}" densityAware="false" width="20px"/>-->
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell title="ERP SOLUTION ACROSS PLATFORM">
+													<FlexBox justifyContent="Center">
+														<Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF03EvRWGaQcy615-DZaR0qoy3BNRfVT1gYJgbQgI_YBMhlyIR"
+															tooltip="Track all units of an enterprise" densityAware="false" width="{/imageWidth}"/>
+													</FlexBox>
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell title="BUILD ENTERPRISE STRATEGY">
+													<FlexBox justifyContent="Center">
+														<Image src="http://www.excellonsoft.com/upload_file/Blogs/ERP_Solution3.jpg" tooltip="Decision making" densityAware="false"
+															width="{/imageWidth}"/>
+													</FlexBox>
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+											</l:BlockLayoutRow>
+											<l:BlockLayoutRow>
+												<l:BlockLayoutCell title="Subscribe for Newsletter" width="3">
+													<form:SimpleForm editable="true" backgroundDesign="Transparent">
+														<Label text="Email" required="true"/>
+														<Input value="{/Subscribe/Email}" liveChange="checkCreditCardStep" valueLiveUpdate="true"/>
+														<Label text="Name"/>
+														<Input value="{/Subscribe/Name}"/>
+														<Label text="Expiration date"/>
+														<DatePicker value="{/CreditCard/Expire}"/>
+													</form:SimpleForm>
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+												<l:BlockLayoutCell title="25% width cell">
+													<Text
+														text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</l:BlockLayoutCell>
+											</l:BlockLayoutRow>
+										</l:BlockLayout>
+									</l:VerticalLayout>
+								</IconTabFilter>
+								<IconTabFilter id="layouts" text="{i18n>layoutFilter}">
+									<MessageStrip type="Information" showIcon="true" text="PLease enter the required details to insert into backend database"/>
+								</IconTabFilter>
+								<IconTabFilter id="Dashboard" text="{i18n>Dashboard}">
+									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Manage Activity Master Data Type" subheader="Subtitle"
+										press="onPress1">
+										<TileContent >
+											<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png"/>
+										</TileContent>
+									</GenericTile>
+									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Manage Activity Master Data Type" subheader="Subtitle"
+										press="onPress2">
+										<TileContent>
+											<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png"/>
+										</TileContent>
+									</GenericTile>
+									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Manage Activity Master Data Type" subheader="Subtitle"
+										press="press">
+										<TileContent>
+											<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png"/>
+										</TileContent>
+									</GenericTile>
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

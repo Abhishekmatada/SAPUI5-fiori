@@ -1,0 +1,19 @@
+{
+	"products": {
+		"pic1": "https://pureadvantage.org/wp-content/uploads/2016/08/Dr_Rosie_Bosworth-mirai2.jpg",
+		"pic2": "http://www.excellonsoft.com/upload_file/Blogs/ERP_Solution3.jpg",
+		"pic3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF03EvRWGaQcy615-DZaR0qoy3BNRfVT1gYJgbQgI_YBMhlyIR",
+		"screw": "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/screw.jpg"
+	},
+	"images": [
+		"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/bigimgs/273303_low_jpg_srgb.jpg",
+		"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/bigimgs/273537_low_jpg_srgb.jpg",
+		"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/bigimgs/274731_high_jpg_eci_rgb.jpg",
+		"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1603.jpg",
+		"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2002.jpg",
+		"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2020.jpg",
+		"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2025.jpg",
+		"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2026.jpg",
+		"https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2027.jpg"
+	]
+}

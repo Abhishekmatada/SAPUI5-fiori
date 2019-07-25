@@ -1,0 +1,84 @@
+<mvc:View controllerName="VF.VF.controller.View3" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.f"
+	xmlns:w="sap.ui.integration.widgets">
+	<App id="app">
+		<Page title="OVERVIEW PAGE" showNavButton="true" navButtonPress="onBack">
+			<content>
+				<FlexBox height="50px" alignItems="Start" justifyContent="Start">
+					<items>
+						<Button text="Navigate back to the first view" class="sapUiTinyMarginBegin" press="onBack"/>
+						<Button text="INFO" class="sapUiTinyMarginBegin" press="handleDialogPress"/>
+						<Button id="quickViewBtn" class="sapUiTinyMarginBegin" text="Details" width="200px" press="handleQuickViewBtnPress"/>
+					</items>
+				</FlexBox>
+				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" binding="{/ProductCollection/0}" intro="{Description}"
+					title="Long title truncated to 80 chars on all devices and to 50 chars on phone portrait"
+					number="{ parts:[{path:'Price'},{path:'CurrencyCode'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
+					numberUnit="{CurrencyCode}" showMarkers="true" markFlagged="true" markFavorite="true" numberState="Success" backgroundDesign="Translucent">
+					<attributes>
+						<ObjectAttribute title="Manufacturer" text="{SupplierName}"/>
+					</attributes>
+					<statuses>
+						<ObjectStatus title="Approval" text="Pending" state="Warning"/>
+					</statuses>
+					<headerContainer>
+						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
+							<items>
+								<IconTabFilter text="GRAPHICAL ANALYSIS" count="1" key="key3">
+									<content>
+										<f:GridContainer class="sapUiSmallMargin">
+											<w:Card manifest="{manifests>/line}">
+												<w:layoutData>
+													<f:GridContainerItemLayoutData rows="5" columns="5"/>
+												</w:layoutData>
+											</w:Card>
+											<w:Card manifest="{manifests>/stackedColumn}">
+												<w:layoutData>
+													<f:GridContainerItemLayoutData rows="5" columns="5"/>
+												</w:layoutData>
+											</w:Card>
+											<w:Card manifest="{manifests>/donut1}">
+												<w:layoutData>
+													<f:GridContainerItemLayoutData rows="3" columns="3"/>
+												</w:layoutData>
+											</w:Card>
+											<w:Card manifest="{manifests>/donut2}">
+												<w:layoutData>
+													<f:GridContainerItemLayoutData rows="3" columns="3"/>
+												</w:layoutData>
+											</w:Card>
+											<w:Card manifest="{manifests>/donut3}">
+												<w:layoutData>
+													<f:GridContainerItemLayoutData rows="3" columns="3"/>
+												</w:layoutData>
+											</w:Card>
+											<w:Card manifest="{manifests>/donut4}">
+												<w:layoutData>
+													<f:GridContainerItemLayoutData rows="3" columns="3"/>
+												</w:layoutData>
+											</w:Card>
+											<w:Card manifest="{manifests>/donut5}">
+												<w:layoutData>
+													<f:GridContainerItemLayoutData rows="3" columns="3"/>
+												</w:layoutData>
+											</w:Card>
+											<w:Card manifest="{manifests>/donut6}">
+												<w:layoutData>
+													<f:GridContainerItemLayoutData rows="3" columns="3"/>
+												</w:layoutData>
+											</w:Card>
+										</f:GridContainer>
+									</content>
+								</IconTabFilter>
+								<IconTabFilter text="PartnerInfo" key="key4" count="1">
+									<content>
+										<Link text="Partner SAP SE" target="_blank" href="http://www.sap.com/"/>
+									</content>
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+					</headerContainer>
+				</ObjectHeader>
+			</content>
+		</Page >
+	</App>
+</mvc:View>
